@@ -95,15 +95,15 @@
           height: auto;
           animation-name: slideIn;
           animation-duration: 1s;
-          animation-fill-mode: forwards; /* Behåll slutvärden efter avslutad animation */
+          animation-fill-mode: forwards;
         }
 
         @keyframes slideIn {
           from {
-            right: -100%; /* Startposition utanför containern */
+            right: -100%;
           }
           to {
-            right: 0; /* Slutposition, helt till höger */
+            right: 0;
           }
         }
       }
@@ -144,7 +144,6 @@
 
         .front-img {
           width: 100%;
-          // margin-bottom: 1.5rem;
           padding-bottom: 3rem;
         }
       }

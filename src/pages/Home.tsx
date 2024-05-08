@@ -28,7 +28,7 @@ const Home = () => {
               <div className="right">
                 <Image className="front-img" src={home.image.src} />
               </div>
-            ))}{" "}
+            ))}
             <p>{paragraph}</p>
             <div className="goTo-btn">
               <Button onClick={() => navigate("/work")}>See my work ⇀</Button>
