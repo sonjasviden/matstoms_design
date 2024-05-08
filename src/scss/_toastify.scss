@@ -1,0 +1,32 @@
+.Toastify {
+  .Toastify__toast--success {
+    .Toastify__progress-bar--success {
+      background-color: #436c31;
+    }
+
+    svg {
+      fill: #436c31;
+    }
+    .Toastify__toast-body {
+      font-family: "Futura Std", sans-serif;
+      font-weight: 400;
+      color: #436c31;
+    }
+  }
+
+  .Toastify__toast--error {
+    .Toastify__progress-bar--error {
+      background-color: #943333;
+    }
+
+    .Toastify__toast-body {
+      font-family: "Futura Std", sans-serif;
+      font-weight: 400;
+      color: #943333;
+    }
+
+    svg {
+      fill: #943333;
+    }
+  }
+}

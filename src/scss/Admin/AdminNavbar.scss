@@ -1,0 +1,36 @@
+.admin-navbar {
+  background-color: #e3e3e3 !important;
+  padding-top: 6rem;
+
+  h1 {
+    text-align: center;
+    font-family: "Futura Std", sans-serif;
+    color: #333333;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: -1rem;
+    font-size: 25px;
+  }
+
+  .navbar {
+    position: relative;
+    .container {
+      justify-content: center;
+
+      .nav-item {
+        margin: 8px 20px 8px 20px;
+        padding: 8px 0;
+
+        &:hover {
+          color: #585656;
+          border-bottom: 1px solid #585656;
+        }
+      }
+
+      .active {
+        color: #585656;
+        border-bottom: 1px solid #585656;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.worksPage {
+  background-image: url("/images/home-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  padding-top: 6rem;
+  overflow-y: scroll;
+  padding-bottom: 2rem;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container {
+    padding: 0 25px;
+
+    h1 {
+      font-family: "Futura Std", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: #333;
+      margin: 1.5rem 0;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .row {
+      margin-bottom: 4rem;
+
+      .col {
+        position: relative;
+
+        img {
+          transition: transform 0.3s ease;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+
+        .image-title {
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #333;
+          padding: 10px;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          text-align: center;
+          font-size: 30px;
+          font-family: "Futura Std", sans-serif;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        &:hover .image-title {
+          opacity: 1;
+          letter-spacing: 4px;
+        }
+      }
+    }
+  }
+}

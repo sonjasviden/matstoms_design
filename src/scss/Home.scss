@@ -1,0 +1,153 @@
+.homePage {
+  background-image: url("/images/home-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  padding-top: 6rem;
+  overflow-y: scroll;
+  padding-bottom: 2rem;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container {
+    padding: 0 20px;
+
+    .logo {
+      width: 100%;
+      text-align: right;
+      margin-bottom: 1.5rem;
+
+      img {
+        width: 70%;
+      }
+    }
+
+    .front-img {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-family: "Futura Std", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .goTo-btn {
+      .btn {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        color: #333;
+        font-family: "Futura Std", sans-serif;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        padding-left: 0;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .homePage {
+    .container {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      max-width: 730px;
+
+      .left {
+        width: 50%;
+        margin-right: 1rem;
+
+        .logo {
+          width: 100%;
+
+          img {
+            width: 60%;
+          }
+        }
+      }
+
+      .right {
+        width: 50%;
+        margin-left: 1rem;
+        position: relative;
+
+        .front-img {
+          width: 100%;
+          margin-bottom: 1.5rem;
+          position: absolute;
+          top: 0;
+          right: -100%;
+          height: auto;
+          animation-name: slideIn;
+          animation-duration: 1s;
+          animation-fill-mode: forwards; /* Behåll slutvärden efter avslutad animation */
+        }
+
+        @keyframes slideIn {
+          from {
+            right: -100%; /* Startposition utanför containern */
+          }
+          to {
+            right: 0; /* Slutposition, helt till höger */
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .homePage {
+    .container {
+      max-width: 850px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .homePage {
+    .container {
+      max-width: 1300px;
+
+      .left {
+        width: 40%;
+        margin-right: 3rem;
+
+        .logo {
+          width: 100%;
+          margin-bottom: 3rem;
+
+          img {
+            width: 40%;
+          }
+        }
+      }
+
+      .right {
+        width: 40%;
+        margin-left: 3rem;
+
+        .front-img {
+          width: 100%;
+          // margin-bottom: 1.5rem;
+          padding-bottom: 3rem;
+        }
+      }
+    }
+  }
+}

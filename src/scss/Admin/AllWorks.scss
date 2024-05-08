@@ -1,0 +1,41 @@
+.admin-allWorks-page {
+  margin-bottom: 3rem;
+
+  .container {
+    margin-top: 3rem;
+    h1 {
+      font-family: "Canela Deck Trial", sans-serif;
+      font-weight: 100;
+      font-size: 25px;
+      margin-bottom: 2rem;
+    }
+  }
+  table {
+    width: 100%;
+
+    tr {
+      td {
+        // width: 25%;
+        border-bottom: 1px dashed;
+
+        img {
+          margin: 10px 0 10px 0;
+          object-fit: cover;
+        }
+      }
+
+      .edit-delete {
+        // display: flex;
+        text-align: center;
+        min-height: 72px;
+
+        img {
+          width: 30px;
+          margin-right: 8px;
+          cursor: pointer;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

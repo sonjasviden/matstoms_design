@@ -1,0 +1,41 @@
+// Navbar
+.navbar {
+  padding: 20px 0 20px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+
+  .container {
+    min-height: 51px;
+
+    .navbar-nav {
+      flex-direction: row;
+      .nav-item {
+        padding: 8px;
+        font-family: "Futura Std", sans-serif;
+        color: #333333;
+        font-weight: 400;
+      }
+    }
+
+    .navbar-brand {
+      img {
+        width: 80px;
+      }
+    }
+
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+  }
+}
+
+// Home Navbar
+.homeNavbar {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  img {
+    display: none;
+  }
+}

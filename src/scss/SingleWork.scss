@@ -1,0 +1,66 @@
+.singleWork-page {
+  background-image: url("/images/home-bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  padding-top: 6rem;
+  overflow-y: scroll;
+  padding-bottom: 2rem;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .container {
+    padding: 1rem 25px;
+
+    .goBack-btn {
+      .btn {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        color: #333;
+        font-family: "Futura Std", sans-serif;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+    }
+
+    h1 {
+      font-family: "Futura Std", sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+      text-transform: uppercase;
+      color: #333;
+      margin: 1rem 0;
+      letter-spacing: 4px;
+    }
+
+    p {
+      width: 50%;
+      font-family: "Futura Std", sans-serif;
+      color: #333;
+    }
+
+    .row {
+      margin-bottom: 4rem;
+
+      .col {
+        position: relative;
+
+        img {
+          transition: transform 0.3s ease;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
