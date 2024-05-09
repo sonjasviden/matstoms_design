@@ -52,7 +52,7 @@ const Login = () => {
                     <Alert variant="danger">{error}</Alert>
                   </div>
                 )}
-                <Card.Title className="mb-3">Logga in</Card.Title>
+                <Card.Title className="mb-3">Logga in (admin)</Card.Title>
 
                 <Form onSubmit={handleSubmit(onSubmit)}>
                   <Form.Group controlId="formEmail" className="formgroup">

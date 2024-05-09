@@ -1,0 +1,54 @@
+.login-page {
+  padding-top: 7rem;
+
+  .container {
+    .card {
+      border: none;
+      margin: 0 20px;
+      .card-body {
+        .card-title {
+          color: #333;
+          font-family: "Futura Std", sans-serif;
+          font-weight: 400;
+          font-size: 25px;
+          margin: 15px 0;
+        }
+
+        .formgroup {
+          margin-top: 2rem;
+          color: #333;
+          font-family: "Futura Std", sans-serif;
+          font-weight: 400;
+
+          .password-flex {
+            display: flex;
+            align-items: center;
+
+            svg {
+              margin-left: -40px;
+              font-size: 25px;
+            }
+          }
+
+          .form-control {
+            border: #333 1px solid;
+            border-radius: 10px;
+          }
+        }
+
+        .btn {
+          color: #333;
+          border: #333 1px solid;
+          font-family: "Futura Std", sans-serif;
+          font-weight: 400;
+          margin-top: 2rem !important;
+
+          &:hover {
+            background-color: #333;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

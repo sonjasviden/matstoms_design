@@ -15,18 +15,15 @@ const WorkCard: React.FC<Props> = ({ work }) => {
   return (
     <>
       {work.frontImage && (
-        <>
-          <Image
-            key={work.frontImage._id}
-            src={work.frontImage.src}
-            fluid
-            className="mb-3"
-            style={{ height: "100%" }}
-            onClick={handleCardClick}
-          />
-          <span className="image-title">{work.title}</span>
-        </>
+        <Image
+          key={work.frontImage._id}
+          src={work.frontImage.src}
+          fluid
+          className="mb-3"
+          onClick={handleCardClick}
+        />
       )}
+      <span className="image-title">{work.title}</span>
     </>
   );
 };

@@ -18,8 +18,17 @@ const Logout = () => {
   };
 
   return (
-    <Button variant="outline-secondary" size="sm" onClick={handleLogout}>
-      Logga ut
+    <Button
+      style={{
+        marginLeft: "5rem",
+        fontFamily: "Futura Std, sans-serif",
+        color: "#333",
+      }}
+      variant="outline-secondary"
+      size="sm"
+      onClick={handleLogout}
+    >
+      Logga ut från admin
     </Button>
   );
 };

@@ -7,12 +7,16 @@ import WorkCard from "./WorkCard";
 const Works = () => {
   const { data: worksData } = useGetCollection<Work>(worksCol);
 
+  const sortedWork = worksData?.sort(
+    (a, b) => b.created.toDate().getTime() - a.created.toDate().getTime()
+  );
+
   return (
     <div className="worksPage">
       <Container>
         <h1>My work</h1>
         <Row xs={1} md={2} lg={3} className="g-4">
-          {worksData?.map((work) => (
+          {sortedWork?.map((work) => (
             <Col key={work._id} className="col">
               <WorkCard work={work} />
             </Col>

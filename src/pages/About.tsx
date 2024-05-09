@@ -29,7 +29,7 @@ const About = () => {
               <div className="contact">
                 <div className="contact-flex">
                   <Image src="/images/email.png" />
-                  <a href="mailto: sara.matstoms@gmail.com">
+                  <a target="_blank" href="mailto: sara.matstoms@gmail.com">
                     sara.matstoms@gmail.com
                   </a>
                 </div>
@@ -41,7 +41,10 @@ const About = () => {
 
                 <div className="contact-flex">
                   <Image src="/images/instagram.png" />
-                  <a href="https://www.instagram.com/matstomsdesign/">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/matstomsdesign/"
+                  >
                     @matstomsdesign
                   </a>
                 </div>

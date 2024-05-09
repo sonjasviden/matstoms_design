@@ -1,10 +1,12 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import Logout from "../../components/Logout";
 
 const AdminNavbar = () => {
   return (
     <div className="admin-navbar">
       <h1>Admin</h1>
+      <Logout />
       <Navbar expand="md">
         <Container>
           <Nav>

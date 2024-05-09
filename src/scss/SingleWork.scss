@@ -45,7 +45,7 @@
     }
 
     p {
-      width: 50%;
+      width: 100%;
       font-family: "Futura Std", sans-serif;
       color: #333;
     }
@@ -53,12 +53,25 @@
     .row {
       margin-bottom: 4rem;
 
-      .col {
-        position: relative;
+      img {
+        max-height: 500px;
+        object-fit: cover;
+      }
+    }
+  }
+}
 
-        img {
-          transition: transform 0.3s ease;
-          cursor: pointer;
+@media only screen and (min-width: 992px) {
+  .singleWork-page {
+    .container {
+      p {
+        width: 50%;
+      }
+      .row {
+        .col {
+          img {
+            height: -webkit-fill-available;
+          }
         }
       }
     }
